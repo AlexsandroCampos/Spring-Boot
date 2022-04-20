@@ -20,7 +20,7 @@ public class AnimeService {
         return animes;
     }
 
-    public Anime FindById(Long id) {
+    public Anime findById(Long id) {
         return animes.stream()
                 .filter(anime -> anime.getId().equals(id))
                 .findFirst()
@@ -31,5 +31,9 @@ public class AnimeService {
         anime.setId(ThreadLocalRandom.current().nextLong(3,1000000));
         animes.add(anime);
         return anime;
+    }
+
+    public void delete(Long id) {
+        animes.remove(findById(id));
     }
 }
