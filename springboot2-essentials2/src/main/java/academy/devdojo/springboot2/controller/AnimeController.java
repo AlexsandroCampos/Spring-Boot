@@ -15,6 +15,7 @@ import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@SuppressWarnings("unused")
 @RestController
 @RequestMapping("animes")
 @Log4j2
