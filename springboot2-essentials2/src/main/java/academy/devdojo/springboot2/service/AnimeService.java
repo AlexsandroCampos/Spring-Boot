@@ -25,7 +25,7 @@ public class AnimeService {
         return animeRepository.findAll(pageable);
     }
 
-    public List<Anime> listAllNonPageble() {
+    public List<Anime> listAllNonPageable() {
         return animeRepository.findAll();
     }
 

@@ -40,7 +40,7 @@ class AnimeControllerTest {
         BDDMockito.when(animeServiceMock.listAll(ArgumentMatchers.any()))
                 .thenReturn(animePage);
 
-        BDDMockito.when(animeServiceMock.listAllNonPageble())
+        BDDMockito.when(animeServiceMock.listAllNonPageable())
                 .thenReturn(List.of(AnimeCreator.createValidAnime()));
 
         BDDMockito.when(animeServiceMock.findByIdOrThrowBadRequestException(ArgumentMatchers.anyLong()))

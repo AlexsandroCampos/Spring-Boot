@@ -30,7 +30,7 @@ public class AnimeController {
 
     @GetMapping("/all")
     public ResponseEntity<List<Anime>> listAll() {
-        return new ResponseEntity<>(animeService.listAllNonPageble(), HttpStatus.OK);
+        return new ResponseEntity<>(animeService.listAllNonPageable(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
