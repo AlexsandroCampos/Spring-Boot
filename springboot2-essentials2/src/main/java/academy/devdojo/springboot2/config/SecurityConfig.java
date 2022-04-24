@@ -20,17 +20,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final DevDojoUserDetailsService devDojoUserDetailsService;
 
-    /**
-     * BasicAuthenticationFilter
-     * UsernamePasswordAuthenticationFilter
-     * DefaultLoginPageGeneratingFilter
-     * DefaultLogoutPageGeneratingFilter
-     * FilterSecurityInterceptor
-     * Authentication -> Authorization
-     *
-     * @param http
-     * @throws Exception
-     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
